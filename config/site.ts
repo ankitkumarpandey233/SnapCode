@@ -12,12 +12,12 @@ export const siteConfig = {
     github: "https://github.com/arshad-yaseen/pictocode",
   },
   creator: {
-    name: "Arshad Yaseen",
-    twitter: "https://twitter.com/arshadyaseeen",
-    twitterId: "@arshadyaseeen",
-    github: "https://github.com/arshad-yaseen",
-    website: "https://arshadyaseen.com",
-    mail: "m@arshadpyaseen.com",
+    name: "Ankit Kumar Pandey",
+    twitter: " ",
+    twitterId: "",
+    github: "https://github.com/ankitkumarpandey233",
+    website: " ",
+    mail: "",
   },
   keywords: [
     "Pictocode Tool",
