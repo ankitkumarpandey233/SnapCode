@@ -2,21 +2,21 @@ export type SiteConfig = typeof siteConfig
 
 export const siteConfig = {
   name: "Snapcode- Convert pictures to code",
-  short_name: "Pictocode",
+  short_name: "snapcode",
   description:
     "Snapcodeis a tool that converts pictures and URLs into code. It can process both image files and image URLs, as well as website URLs, effectively cloning websites. The tool also supports conversion to modern frameworks. It is a free and open-source tool designed for converting pictures into code.",
-  url: " ",
-  ogImage: " ",
+  url: "https://github.com/ankitkumarpandey233/",
+  ogImage: "https://github.com/ankitkumarpandey233/",
   links: {
     twitter: "https://twitter.com/ankitkumarpandey233",
     github: "https://github.com/ankitkumarpandey233/",
   },
   creator: {
     name: "Ankit Kumar Pandey",
-    twitter: " ",
+    twitter: "https://github.com/ankitkumarpandey233/",
     twitterId: "",
     github: "https://github.com/ankitkumarpandey233",
-    website: " ",
+    website: "https://github.com/ankitkumarpandey233/ ",
     mail: "",
   },
   keywords: [
