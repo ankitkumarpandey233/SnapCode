@@ -5,8 +5,8 @@ export const siteConfig = {
   short_name: "Pictocode",
   description:
     "Snapcodeis a tool that converts pictures and URLs into code. It can process both image files and image URLs, as well as website URLs, effectively cloning websites. The tool also supports conversion to modern frameworks. It is a free and open-source tool designed for converting pictures into code.",
-  url: "https://pictocode.arshadyaseen.com",
-  ogImage: "https://pictocode.arshadyaseen.com/og.png",
+  url: " ",
+  ogImage: " ",
   links: {
     twitter: "https://twitter.com/ankitkumarpandey233",
     github: "https://github.com/ankitkumarpandey233/",
