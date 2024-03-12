@@ -1,0 +1,162 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    --background: 0 0% 100%;
+    --foreground: 222.2 84% 4.9%;
+    --card: var(--background);
+    --popover: var(--gray4);
+    --card-foreground: var(--foreground);
+    --popover-foreground: var(--foreground);
+    --accent: #fafafa;
+    --accent-foreground: #111111;
+    --primary: #111111;
+    --primary-foreground: #ffffff;
+    --secondary: var(--gray3);
+    --secondary-foreground: var(--gray9);
+    --muted: var(--gray2);
+    --muted-foreground: var(--gray11);
+    --accent: 210 40% 96.1%;
+    --accent-foreground: 222.2 47.4% 11.2%;
+    --destructive: 0 84.2% 60.2%;
+    --destructive-foreground: 210 40% 98%;
+    --border: var(--gray6);
+    --input: var(--gray5);
+    --ring: 222.2 84% 4.9%;
+    --radius: 0.55rem;
+
+    --gray1: 0 0% 99%;
+    --gray2: 0 0% 97.3%;
+    --gray3: 0 0% 95.1%;
+    --gray4: 0 0% 93%;
+    --gray5: 0 0% 90.9%;
+    --gray6: 0 0% 88.7%;
+    --gray7: 0 0% 85.8%;
+    --gray8: 0 0% 78%;
+    --gray9: 0 0% 56.1%;
+    --gray10: 0 0% 52.3%;
+    --gray11: 0 0% 43.5%;
+    --gray12: 0 0% 9%;
+
+    --tomato1: 10, 100%, 99.4%;
+    --tomato2: 8, 100%, 98.4%;
+    --tomato3: 8, 100%, 96.6%;
+    --tomato4: 8, 100%, 94.3%;
+    --tomato5: 8, 92.8%, 91%;
+    --tomato6: 9, 84.7%, 86.3%;
+    --tomato7: 10, 77.3%, 79.5%;
+    --tomato8: 10, 71.6%, 71%;
+    --tomato9: 10, 78%, 54%;
+    --tomato10: 10, 71.4%, 49.4%;
+    --tomato11: 10, 82%, 42%;
+    --tomato12: 8, 50%, 24%;
+
+    --error: var(--tomato9);
+    --error-light: var(--tomato4);
+    --error-lighter: var(--tomato2);
+    --error-foreground: var(--tomato11);
+    --error-hover: var(--tomato10);
+
+    /* Shadows */
+    --shadow-border: 0 0 0 1px hsla(var(--border));
+    --shadow-small: 0px 1px 2px rgba(0, 0, 0, 0.04);
+    --shadow-border-small: var(--shadow-border), var(--shadow-small);
+    --shadow-medium: 0px 2px 2px rgba(0, 0, 0, 0.04),
+      0px 8px 8px -8px rgba(0, 0, 0, 0.04);
+    --shadow-border-medium: var(--shadow-border), var(--shadow-medium);
+    --shadow-large: 0px 2px 2px rgba(0, 0, 0, 0.04),
+      0px 8px 16px -4px rgba(0, 0, 0, 0.04);
+    --shadow-border-large: var(--shadow-border), var(--shadow-large);
+    --shadow-tooltip: var(--shadow-border), 0px 1px 1px rgba(0, 0, 0, 0.02),
+      0px 4px 8px rgba(0, 0, 0, 0.04);
+    --shadow-dialog: var(--shadow-border), 0px 1px 1px rgba(0, 0, 0, 0.02),
+      0px 4px 8px -4px rgba(0, 0, 0, 0.04),
+      0px 16px 24px -8px rgba(0, 0, 0, 0.06);
+    --shadow-dialog: var(--shadow-border), 0px 1px 1px rgba(0, 0, 0, 0.02),
+      0px 8px 16px -4px rgba(0, 0, 0, 0.04),
+      0px 24px 32px -8px rgba(0, 0, 0, 0.06);
+    --shadow-fullscreen: var(--shadow-border), 0px 1px 1px rgba(0, 0, 0, 0.02),
+      0px 8px 16px -4px rgba(0, 0, 0, 0.04),
+      0px 24px 32px -8px rgba(0, 0, 0, 0.06);
+  }
+
+  .dark {
+    --background: 222.2 84% 4.9%;
+    --foreground: 210 40% 98%;
+    --accent: #111010;
+    --accent-foreground: #fafafa;
+    --primary: #ffffff;
+    --primary-foreground: #111111;
+    --accent: 217.2 32.6% 17.5%;
+    --accent-foreground: 210 40% 98%;
+    --destructive: 0 62.8% 30.6%;
+    --destructive-foreground: 210 40% 98%;
+    --ring: 212.7 26.8% 83.9;
+
+    --shadow-border: 0 0 0 1px hsla(0, 0%, 100%, 0.145);
+
+    --gray1: 0 0% 8.5%;
+    --gray2: 0 0% 11%;
+    --gray3: 0 0% 13.6%;
+    --gray4: 0 0% 15.8%;
+    --gray5: 0 0% 17.9%;
+    --gray6: 0 0% 20.5%;
+    --gray7: 0 0% 24.3%;
+    --gray8: 0 0% 31.2%;
+    --gray9: 0 0% 43.9%;
+    --gray10: 0 0% 49.4%;
+    --gray11: 0 0% 62.8%;
+    --gray12: 0 0% 93%;
+
+    --tomato1: 10, 23%, 9.4%;
+    --tomato2: 10, 39%, 11.6%;
+    --tomato3: 9, 48.3%, 15.5%;
+    --tomato4: 9, 53%, 18.1%;
+    --tomato5: 9, 57%, 20.7%;
+    --tomato6: 9, 61.8%, 24.5%;
+    --tomato7: 9, 68.4%, 31.1%;
+    --tomato8: 10, 80.4%, 43.9%;
+    --tomato9: 10, 78%, 54%;
+    --tomato10: 10, 88.4%, 64.1%;
+    --tomato11: 10, 100%, 72%;
+    --tomato12: 10, 85%, 89%;
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+  body {
+    @apply bg-background text-foreground;
+    font-feature-settings:
+      "rlig" 1,
+      "calt" 1;
+  }
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  appearance: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  margin: 0;
+}
+
+html {
+  touch-action: manipulation;
+  width: 100vw;
+  height: 100vh;
+  height: 100dvh;
+  -webkit-tap-highlight-color: transparent;
+}
+
+.monaco-editor span {
+  @apply font-mono !important;
+}
+
+.hide-scrollbar::-webkit-scrollbar {
+  display: none;
+}

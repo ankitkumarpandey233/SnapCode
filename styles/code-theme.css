@@ -1,0 +1,94 @@
+code .line {
+  text-align: left;
+  white-space: pre;
+  word-spacing: normal;
+  word-break: normal;
+  font-size: 13px;
+  line-height: 20px;
+  -moz-tab-size: 4;
+  -o-tab-size: 4;
+  tab-size: 4;
+  padding: 0.5px 2.5rem 0.5px 1.5rem;
+  @apply text-[#465262];
+}
+
+code {
+  counter-reset: line;
+}
+
+code .line::before {
+  counter-increment: line;
+  content: counter(line);
+  width: 16px;
+  font-size: 13px;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  text-align: right;
+  flex-shrink: 0;
+  margin-right: 1.2rem;
+  @apply text-gray-10;
+}
+
+code .hide-line::before {
+  content: "";
+  width: 0px;
+  display: inline-block;
+  margin-right: 0.2rem;
+}
+
+code .highlight-line {
+  @apply border-l-2 border-[#A67C52] bg-[#F4F2EF] pr-6 dark:bg-[#272727];
+}
+
+:root {
+  /* Light Mode Colors */
+  --primary-color: #1d4ed8;
+  --secondary-color: #0284c7;
+  --tertiary-color: #0d9488;
+
+  /* Dark Mode Colors */
+  --primary-color-dark: #5a489b;
+  --secondary-color-dark: #0f5066;
+  --tertiary-color-dark: #3c7c7a;
+}
+
+/* Primary Highlight: Keywords, Functions, Literals, Names, Titles, Built-ins, Types */
+.hljs-variable,
+.hljs-template-variable,
+.hljs-function,
+.hljs-literal,
+.hljs-attribute {
+  @apply text-[var(--primary-color)] dark:text-[var(--primary-color-dark)];
+}
+
+/* Secondary Highlight: Strings and Variables */
+.hljs-keyword,
+.hljs-title,
+.hljs-built_in,
+.hljs-tag,
+.hljs-type {
+  @apply text-[var(--secondary-color)] dark:text-[var(--secondary-color-dark)];
+}
+
+.hljs-symbol,
+.hljs-bullet,
+.hljs-attr,
+.hljs-regexp,
+.hljs-selector-class,
+.hljs-selector-tag,
+.hljs-link {
+  @apply text-[var(--tertiary-color)] dark:text-[var(--tertiary-color-dark)];
+}
+
+.hljs-string {
+  @apply text-[#465262];
+}
+
+/* Tertiary Highlight: Comments and Meta */
+.hljs-comment,
+.hljs-quote,
+.hljs-meta {
+  @apply text-gray-10;
+}

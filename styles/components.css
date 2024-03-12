@@ -1,0 +1,109 @@
+.sonner-toast {
+  @apply min-h-[60px] rounded-xl border-transparent pl-6 text-sm text-foreground shadow-popover dark:bg-gray-900 !important;
+}
+
+.gradient-box {
+  position: relative;
+  background: conic-gradient(
+    from calc(var(--r2) - 160deg) at var(--x) 40px,
+    #fff 0%,
+    #000 20%,
+    #fff 25%
+  );
+  animation:
+    -0.64s rotating2 2s linear infinite,
+    -0.64s x 2s linear infinite;
+}
+
+.gradient-box::after {
+  content: "";
+  display: block;
+  position: absolute;
+  background:
+    linear-gradient(#fff, #fff) padding-box,
+    linear-gradient(to right, rgba(20, 20, 20, 0.4), hsl(0 0% 14.2%)) border-box;
+  inset: 2px;
+  z-index: 2;
+  transition: opacity 0.3s ease;
+  border-radius: 9px;
+  -webkit-border-radius: 9px;
+  -moz-border-radius: 9px;
+  -ms-border-radius: 9px;
+  -o-border-radius: 9px;
+}
+
+.dark .gradient-box {
+  box-shadow: 0px 0px 20px 0px rgba(236, 237, 238, 0.1) inset;
+  position: relative;
+  background: conic-gradient(
+    from calc(var(--r2) - 80deg) at var(--x) 20px,
+    #222 0%,
+    #fff 20%,
+    #222 25%
+  );
+  animation:
+    -0.64s rotating2 2s linear infinite,
+    -0.64s x 2s linear infinite;
+}
+
+.dark .gradient-box::after {
+  content: "";
+  display: block;
+  position: absolute;
+  background:
+    linear-gradient(hsl(0, 0%, 11%), hsl(0, 0%, 17.9%)) padding-box,
+    linear-gradient(to right, rgba(236, 237, 238, 0.4), hsl(0 0% 85.8%))
+      border-box;
+  inset: 2px;
+  border-radius: 45px;
+  z-index: 2;
+  transition: opacity 0.3s ease;
+}
+
+@property --r {
+  syntax: "<angle>";
+  inherits: false;
+  initial-value: 0deg;
+}
+
+@property --r2 {
+  syntax: "<angle>";
+  inherits: false;
+  initial-value: 0deg;
+}
+
+@property --x {
+  syntax: "<length>";
+  inherits: false;
+  initial-value: 0px;
+}
+
+@keyframes x {
+  0% {
+    --x: 20px;
+  }
+  100% {
+    --x: 20px;
+  }
+}
+
+@keyframes rotating2 {
+  0% {
+    --r2: 0deg;
+  }
+  100% {
+    --r2: 360deg;
+  }
+}
+
+iframe {
+  transition: opacity 0.5s ease-in-out;
+  -webkit-transition: opacity 0.5s ease-in-out;
+  -moz-transition: opacity 0.5s ease-in-out;
+  -ms-transition: opacity 0.5s ease-in-out;
+  -o-transition: opacity 0.5s ease-in-out;
+}
+
+iframe {
+  @apply !font-sans;
+}
