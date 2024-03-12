@@ -14,7 +14,7 @@ export const upload = async (base64: string) => {
           file: base64,
         }),
       }
-    )
+    ).catch(error => console.error('Error:', error));
 
     if (!imageRes.ok) {
       throw new Error(`HTTP error: ${imageRes.status} ${imageRes.statusText}`)
