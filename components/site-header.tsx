@@ -23,7 +23,7 @@ const SiteHeader = () => {
             className="flex items-center px-3 py-2 font-medium text-gray-12  ring-offset-2 transition-all duration-200 hover:text-gray-12/80  focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-primary "
           >
             <GitHubLogoIcon className="mr-2 inline-block h-4 w-4" />
-            Github
+            Star on Github 
           </Link>
           <BringApiKey />
         </nav>
