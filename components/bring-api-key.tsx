@@ -157,7 +157,7 @@ const BringApiKey = ({ noTrigger, isOpen, setIsOpen }: IBringApiKeyProps) => {
             </DialogTitle>
             <DialogDescription>
               <p className="text-center tracking-tight text-gray-9">
-                You need to bring your OpenAI API key to generate code.
+               please contact Ankit Pandey
               </p>
             </DialogDescription>
           </DialogHeader>
@@ -200,7 +200,7 @@ const BringApiKey = ({ noTrigger, isOpen, setIsOpen }: IBringApiKeyProps) => {
             </DrawerTitle>
             <DrawerDescription>
               <p className="text-center tracking-tight text-gray-9">
-                You need to bring your OpenAI API key to generate code.
+              please contact Ankit Pandey
               </p>
             </DrawerDescription>
           </DrawerHeader>
@@ -246,7 +246,7 @@ const ApiKeyForm = ({
       <div className="flex justify-center">
         <Input
           type="text"
-          placeholder="Enter your OpenAI API key"
+          placeholder="Enter your  key"
           className="h-11 w-full"
           value={apiKey}
           spellCheck={false}
@@ -296,7 +296,7 @@ const ApiKeyForm = ({
           </p>
           <p className="text-sm text-gray-9">
             Our website is open source. Check out the code to see how we protect
-            your API key!
+            your key!
           </p>
         </div>
       )}

@@ -1,6 +1,6 @@
 MIT License
 
-Copyright (c) 2023 Arshad Yaseen
+Copyright (c) 2023 Ankit Pandey
 
 Permission is hereby granted, free of charge, to any person obtaining a copy
 of this software and associated documentation files (the "Software"), to deal

@@ -18,7 +18,6 @@ export async function GET(req: NextRequest): Promise<NextResponse> {
   }
 
   try {
-    // https://github.com/arshad-yaseen/shotapi
     const data = await HTTPGet<IShotApiResponse>(
       `https://shotapi.arshadyaseen.com/take?url=${encodeURIComponent(url)}`
     )
